@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.myFlexbox {
+    display: flex;
+    flex-direction: row;
+    padding-top: 4em;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover {
+    background-color: #23527c;
+}
+
+.item {
+    padding-bottom: 30px;
+    font-family: 'Pompiere' ,cursive;
+    color: #00ff00;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.other {
+    background-color: #c2f0c2;
+}
+
+
+.left {
+    width: 20%;
+}
+
+.right {
+    width: 80%;
+}
+
+
+.header {
+    font-family: 'Pompiere' , cursive;
+}
+
+.burrito {
+    padding-bottom: 30px;
+}
+
+.essential {
+    padding-bottom: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.posts {
+    padding-bottom: 45px;
+}
+
+.food {
+    height: 200px;
+    width: 200px;
+    padding-bottom: 30px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.description {
+    padding-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    border-radius: 4px;
+    border: 1px solid black;
+    background-color: #f8f9fa;
+    line-height: 30px;
+    width: 60px;
+}
+
+footer {
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+}
+
+
+@media (max-width: 1016px) {
+    .card {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .bb1 {
+        width: 100%;
+    }
+
+    @media (max-width: 375px) {
+        .myFlexbox {
+            flex-direction: column;
+        }
+
+        .left {
+            width: 100%;
+            padding-bottom: 1em;
+        }
+
+
+        .right {
+            padding-left: 1em;
+        }
+
+        .card {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item {
+            text-align: left; 
+            margin-left: 10px;   
+        }
+
+        .bb1 {
+            display: none;
+        }
+        
+    }
+
+}
+
+
